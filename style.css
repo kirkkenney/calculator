@@ -1,3 +1,141 @@
+/* MOBILE */
+
+@media screen and (max-width:600px) {
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font: bold 25px Arial, sans-serif;
+}
+body {
+	height: 100%;
+	max-height: 100vh;
+	overflow: hidden;
+	background-image: url('images/desk-image.jpg');
+}
+.notes {
+	height: 90%;
+	position: absolute;
+	z-index: 1;
+	top: 5%;
+}
+.pen{
+	z-index: 5;
+	width: 100%;
+	right: 42%;
+	top: 10%;
+	position: absolute;
+	transform:rotate(140deg);
+}
+.shadow {
+	display: none;
+}
+#calculator {
+	transform: rotate(-6deg);
+	position: absolute;
+	width: 70%;
+	height: 80%;
+	left: 24%;
+	top: 10%;
+	background-color:rgb(150,150,150);
+	border: solid 1px rgb(150,150,150);
+	border-radius: 10px;
+	box-shadow: -4px 0px 4px rgb(80,80,80);
+	z-index: 10;
+	display: inline;
+}
+.top span.erase {
+	float: left;
+	font-size: 35px;
+	height: 45px;
+	width: 45px;
+	line-height: 45px;
+	text-align: center;
+	background-color: rgb(19,25,38);
+	color: rgb(230,230,230);
+	box-shadow: 0px 2px rgb(80,80,80);
+	border-radius: 5px;
+	margin: 10px 3px 0 10px;
+}
+.top .screen {
+	height: 45px;
+	width: 150px;
+	float: right;
+	padding: 0 2px;
+	background-color: rgb(100, 100, 100);
+	border-radius: 3px;
+	font-size: 30px;
+	line-height: 45px;
+	color: white;
+	text-align: right;
+    box-shadow: inset 2px 2px 4px rgb(80,80,80);
+    margin: 10px 10px 0px 3px;
+    overflow: hidden;
+}
+.buttons {
+	margin: 25% 2%;
+}
+.buttons, .top {overflow: hidden;}
+.buttons span {
+	float: left;
+	position: relative;
+	top: 0;
+	cursor: pointer;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	color:rgb(80,80,80);
+	background-color: rgb(230,230,230);
+	border-radius: 5px;
+	box-shadow: 0px 2px rgb(80,80,80);
+	text-align: center;
+	margin: 2%;
+	user-select: none;
+	transition: all 0.2s ease;
+}
+.buttons span.operator {
+	background-color: rgb(19,25,38);
+	color: rgb(230,230,230);
+	margin-right: 0;
+}
+.buttons span.sum {
+	background-color:rgb(24,109,24);
+	color: rgb(230,230,230);
+	box-shadow: 0px 2px rgb(80,80,80);
+}
+.buttons span:hover {
+	background-color: rgb(180,180,180);
+	color:rgb(30,30,30);
+}
+.buttons span.sum:hover {
+	background-color:rgb(74,159,74);
+	color: #ffffff;
+}
+.top span.erase:hover {
+	background-color:rgb(69,75,88);
+	color: rgb(230,230,230);
+}
+.buttons span.operator:hover {
+	background-color: rgb(69,75,88);
+	color: rgb(230,230,230);
+}
+.buttons span:active {
+	box-shadow: 0px 0px rgb(80,80,80);
+	top: 0px;
+}
+.buttons span.sum:active {
+	box-shadow: 0px 0px rgb(80,80,80);
+	top: 0px;
+}
+.top span.erase:active {
+	transform:translateY(4px);
+	box-shadow: 0px 0px rgb(80,80,80);
+}
+}
+
+/* TABLET & DESKTOP */
+
+@media screen and (min-width:600px) {
 * {
 	margin: 0;
 	padding: 0;
@@ -136,4 +274,5 @@ body {
 .top span.erase:active {
 	transform:translateY(4px);
 	box-shadow: 0px 0px rgb(80,80,80);
+}
 }
